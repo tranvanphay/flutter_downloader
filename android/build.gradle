@@ -1,0 +1,51 @@
+group 'com.fti.fshare_downloader'
+version '1.0'
+def args = ["-Xlint:deprecation", "-Xlint:unchecked", "-Werror"]
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.2.0'
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+project.getTasks().withType(JavaCompile) {
+    options.compilerArgs.addAll(args)
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 31
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        minSdkVersion 16
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+}
+dependencies {
+    implementation 'androidx.annotation:annotation:1.4.0'
+    //ormlite
+    implementation 'com.j256.ormlite:ormlite-android:5.5'
+    implementation 'com.j256.ormlite:ormlite-core:5.5'
+    implementation 'com.google.code.gson:gson:2.9.0'
+    implementation("org.greenrobot:eventbus:3.3.1")
+}

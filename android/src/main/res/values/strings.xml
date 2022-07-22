@@ -1,0 +1,12 @@
+<resources>
+    <string name="sts_unknown">Unknown</string>
+    <string name="sts_completed">Completed</string>
+    <string name="sts_error">Error</string>
+    <string name="sts_downloading">Downloading…</string>
+    <string name="sts_preparing">Preparing…</string>
+    <string name="sts_paused">Paused…</string>
+    <string name="btn_pause">Pause</string>
+    <string name="btn_resume">Resume</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="is_downloading">This file is downloading…</string>
+</resources>

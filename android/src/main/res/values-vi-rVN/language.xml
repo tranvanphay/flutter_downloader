@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sts_unknown">Unknown</string>
+    <string name="sts_completed">Hoàn thành</string>
+    <string name="sts_error">Lỗi</string>
+    <string name="sts_downloading">Đang tải…</string>
+    <string name="sts_preparing">Đang chuẩn bị…</string>
+    <string name="sts_paused">Tạm dừng…</string>
+    <string name="btn_pause">Tạm dừng</string>
+    <string name="btn_resume">Tiếp tục</string>
+    <string name="btn_cancel">Hủy bỏ</string>
+    <string name="is_downloading">Tệp này đang được tải xuống…</string>
+</resources>
